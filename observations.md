@@ -1,10 +1,10 @@
 # Observation
 
-ANnotate my observation.
+--@STCGoal Annotate my observations.
 
 * A dot language file is generated from the parsing the inputs file (ontology description and the actual entities 
 
-# Structural ELement of Ontology Languag
+# Structural ELement of Ontology Language
 
 * There iso **Class**,  **DatatypeProperty** and **ObjectProperty** in the Ontology Web Language (OWL)
 
@@ -42,3 +42,8 @@ Then a concrete class describe the actual entities that are derived frome the ab
     :hasParent :John, :Mary .
 
 ```
+
+
+# Results
+
+![](test2.png)
