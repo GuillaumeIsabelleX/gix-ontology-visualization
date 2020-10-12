@@ -1,10 +1,10 @@
 #+TITLE: Ontology Visualization
 
 * Example
-#+BEGIN_SRC bash
+```bash
   ./ontology_viz.py -o test.dot test.ttl -O ontology.ttl
   dot -Tpng -o test.png test.dot
-#+END_SRC
+```
 
 - Use ~-o~ to indicate the path of output file
 - Use ~-O~ to indicate the input ontology (Optional).
@@ -17,20 +17,21 @@
   - ~bnode_regex~: a list of regexes, if an uri matches, then it will be dispaly as a blank node without its uri nor label. It can be useful if you have a lot of reifications.
   - ~colors~: config the colors of nodes
     - ~class~, ~literal~, ~instance~ can accept HEX value(e.g. ~"#ff0000"~ ), MATLAB style(e.g. ~"r"~ ), and color name (e.g. ~"red"~ ).
-    #+BEGIN_SRC json
+    
+   ```  json
       "colors": {
         "class": "#ff0000",
         "literal": "r",
         "instance": "red",
       }
-    #+END_SRC
+    ```
     - ~instance~ can also accept a dict value to specify the color of each class instance. And use ~"default"~ to to set color for undefined instances.
-    #+BEGIN_SRC json
+   ```  json
       "instance": {
         "https://tac.nist.gov/tracks/SM-KBP/2018/ontologies/SeedlingOntology#Facility": "#a6cee3",
         "default": "#ffff99"
       }
-    #+END_SRC
+    ```
 
     - ~filled~: config whether fill the node, default value: ~true~.
 - Classes defined in the ontology will be omitted in the output graph. This action can be switched with argument ~-V~.
