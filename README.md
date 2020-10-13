@@ -1,5 +1,10 @@
 #+TITLE: Ontology Visualization
 
+----
+JG's notes::see also: [Observations](./observations.md)
+
+----
+
 * Example
 ```bash
   ./ontology_viz.py -o test.dot test.ttl -O ontology.ttl
@@ -17,7 +22,7 @@
   - ~bnode_regex~: a list of regexes, if an uri matches, then it will be dispaly as a blank node without its uri nor label. It can be useful if you have a lot of reifications.
   - ~colors~: config the colors of nodes
     - ~class~, ~literal~, ~instance~ can accept HEX value(e.g. ~"#ff0000"~ ), MATLAB style(e.g. ~"r"~ ), and color name (e.g. ~"red"~ ).
-    
+
    ```  json
       "colors": {
         "class": "#ff0000",
