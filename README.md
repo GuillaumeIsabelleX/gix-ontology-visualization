@@ -1,7 +1,8 @@
 #+TITLE: Ontology Visualization
 
 ----
-JG's notes::see also: [Observations](./observations.md)
+### JG's notes
+::see also: [Observations](./observations.md)
 
 ----
 
