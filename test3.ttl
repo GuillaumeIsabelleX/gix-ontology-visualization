@@ -3,6 +3,14 @@
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+:MetaSynt a :App ;
+    :name "MetaSynt" ;
+:NadPreviz a :App ;
+    :name "Nad Previz" ;
+    :HasService WP ;
+:WP a :Svc ;
+    :name "Wordpress" ;
+
 :John a :Man ;
     :name "John" ;
     :hasSpouse :Mary .
